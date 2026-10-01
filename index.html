@@ -317,7 +317,7 @@ function prepare(){
   b.onclick=()=>answer(o,b);$("#answers").appendChild(b)})}
 // ALTERAÇÃO: acerto avança direto; erro abre a tela de explicação (e pausa o tempo)
 function answer(opt,button){
-  const correct=opt.correct;
+  const correct=opt.correct;aaa
   $("#answers").querySelectorAll("button").forEach(b=>b.disabled=true);
   let dot=$('[data-i="'+current+'"]');
   if(correct){score++;button.classList.add("selected-correct");dot.classList.add("correct");dot.textContent="✓"}
