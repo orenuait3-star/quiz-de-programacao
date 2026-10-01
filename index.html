@@ -6,7 +6,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#22284a;--muted:#7d86a8}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:Nunito,sans-serif;background:#f5f7ff}.screen{min-height:100vh;padding:32px;display:none;flex-direction:column;align-items:center;justify-content:center}.screen.active{display:flex}.home:before,.home:after{content:"";position:fixed;z-index:-1;border-radius:999px;opacity:.75}.home:before{width:310px;height:310px;background:#dce8ff;top:-110px;left:-95px}.home:after{width:390px;height:390px;background:#d9f8ed;bottom:-185px;right:-130px}.home-card{width:min(620px,100%);padding:54px 42px;text-align:center;background:rgba(255,255,255,.88);border:1px solid #fff;border-radius:28px;box-shadow:0 18px 45px rgba(53,71,131,.12)}.spark{font-size:46px;line-height:1}h1{margin:18px 0 8px;font-size:clamp(2.35rem,7vw,4rem);line-height:1;letter-spacing:-2px}.home p{color:var(--muted);margin:0 0 30px;font-size:1.1rem}button{border:0;font-family:inherit;font-weight:900;cursor:pointer;transition:transform .15s,filter .15s}button:hover:not(:disabled){transform:translateY(-3px);filter:brightness(1.04)}button:disabled{cursor:not-allowed;opacity:.55}.language-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.language-button,.difficulty-button{background:#fff;color:var(--ink);border:2px solid #e1e6f4;border-radius:16px;box-shadow:0 6px 0 rgba(29,38,82,.14)}.language-button{min-height:102px;padding:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:1.05rem}.language-icon{height:38px;font-size:1.85rem;font-weight:900;line-height:1}.php{color:#777bb4;font-style:italic;font-size:1.45rem}.java{color:#e76f35}.python{color:#3776ab}.cpp{color:#00599c}.difficulty-options{display:grid;gap:13px}.difficulty-button{padding:15px 30px;font-size:1.1rem}.easy{color:#16815b}.medium{color:#bc8500}.hard{color:#ce4141}.availability{min-height:24px;margin:22px 0 0;color:var(--muted);font-weight:800}.countdown-card,.result-card{width:min(520px,100%);padding:54px 36px;text-align:center;border-radius:28px;background:#fff;box-shadow:0 18px 45px rgba(53,71,131,.12)}.countdown-number{margin:16px 0 0;font-size:6rem;font-weight:900;line-height:1}.quiz{justify-content:space-between;padding-block:28px 34px}.topbar{width:min(1120px,100%);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;font-size:1.1rem}.topbar-info{display:flex;gap:18px;color:var(--muted);font-weight:800}.timer{color:var(--ink)}.progress{width:min(1120px,100%);display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.progress-dot{width:18px;height:18px;border-radius:50%;background:#e5e9f5;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff}.progress-dot.correct{background:#1a7856}.progress-dot.wrong{background:#d94a4a}.question-area{width:min(900px,100%);text-align:center;padding:28px 0}.question-label{margin:0 0 13px;color:var(--muted);font-weight:900;font-size:.83rem;text-transform:uppercase;letter-spacing:.1em}.question{margin:0;font-size:clamp(1.65rem,4vw,2.8rem);line-height:1.18;letter-spacing:-1px}.answers{width:min(1120px,100%);display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.answer{min-height:114px;padding:20px 24px;text-align:left;color:var(--ink);border-radius:16px;border:2px solid #e1e6f4;background:#fff;font-size:clamp(1rem,2vw,1.2rem);box-shadow:0 6px 0 rgba(29,38,82,.18)}.selected-correct{outline:5px solid #1a7856;filter:brightness(1.05)}.selected-wrong{opacity:.45}.result{background:#f5f7ff}.trophy{font-size:58px}.result h2{margin:15px 0 5px;font-size:2rem}.score{margin:0;font-size:clamp(3.4rem,13vw,6rem);line-height:1.05;font-weight:900;letter-spacing:-4px}.score span{color:var(--muted);font-size:.46em;letter-spacing:-1px}.result-message{margin:18px 0 8px;color:var(--muted);font-size:1.08rem}.result-time{margin:0 0 28px;font-weight:900}.restart{padding:13px 27px;color:var(--ink);background:#e9edfa;border-radius:12px;font-size:.95rem}@media(max-width:620px){.screen{padding:20px}.home-card{padding:44px 24px}.answers{grid-template-columns:1fr}.answer{min-height:72px}.topbar-info{gap:10px;font-size:.88rem}}
+    :root{--ink:#22284a;--muted:#7d86a8}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:Nunito,sans-serif;background:#f5f7ff}.screen{min-height:100vh;padding:32px;display:none;flex-direction:column;align-items:center;justify-content:center}.screen.active{display:flex}.home:before,.home:after{content:"";position:fixed;z-index:-1;border-radius:999px;opacity:.75}.home:before{width:310px;height:310px;background:#dce8ff;top:-110px;left:-95px}.home:after{width:390px;height:390px;background:#d9f8ed;bottom:-185px;right:-130px}.home-card{width:min(620px,100%);padding:54px 42px;text-align:center;background:rgba(255,255,255,.88);border:1px solid #fff;border-radius:28px;box-shadow:0 18px 45px rgba(53,71,131,.12)}.spark{font-size:46px;line-height:1}h1{margin:18px 0 8px;font-size:clamp(2.35rem,7vw,4rem);line-height:1;letter-spacing:-2px}.home p{color:var(--muted);margin:0 0 30px;font-size:1.1rem}button{border:0;font-family:inherit;font-weight:900;cursor:pointer;transition:transform .15s,filter .15s}button:hover:not(:disabled){transform:translateY(-3px);filter:brightness(1.04)}button:disabled{cursor:not-allowed;opacity:.55}.language-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.language-button,.difficulty-button{background:#fff;color:var(--ink);border:2px solid #e1e6f4;border-radius:16px;box-shadow:0 6px 0 rgba(29,38,82,.14)}.language-button{min-height:102px;padding:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:1.05rem}.language-icon{height:38px;font-size:1.85rem;font-weight:900;line-height:1}.php{color:#777bb4;font-style:italic;font-size:1.45rem}.java{color:#e76f35}.python{color:#3776ab}.cpp{color:#00599c}.difficulty-options{display:grid;gap:13px}.difficulty-button{padding:15px 30px;font-size:1.1rem}.easy{color:#16815b}.medium{color:#bc8500}.hard{color:#ce4141}.availability{min-height:24px;margin:22px 0 0;color:var(--muted);font-weight:800}.countdown-card,.result-card{width:min(520px,100%);padding:54px 36px;text-align:center;border-radius:28px;background:#fff;box-shadow:0 18px 45px rgba(53,71,131,.12)}.countdown-number{margin:16px 0 0;font-size:6rem;font-weight:900;line-height:1}.quiz{justify-content:space-between;padding-block:28px 34px}.topbar{width:min(1120px,100%);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;font-size:1.1rem}.topbar-info{display:flex;gap:18px;color:var(--muted);font-weight:800}.timer{color:var(--ink)}.progress{width:min(1120px,100%);display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.progress-dot{width:18px;height:18px;border-radius:50%;background:#e5e9f5;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff}.progress-dot.correct{background:#1a7856}.progress-dot.wrong{background:#d94a4a}.question-area{width:min(900px,100%);text-align:center;padding:28px 0}.question-label{margin:0 0 13px;color:var(--muted);font-weight:900;font-size:.83rem;text-transform:uppercase;letter-spacing:.1em}.question{margin:0;font-size:clamp(1.65rem,4vw,2.8rem);line-height:1.18;letter-spacing:-1px}.answers{width:min(1120px,100%);display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.answer{min-height:114px;padding:20px 24px;text-align:left;color:var(--ink);border-radius:16px;border:2px solid #e1e6f4;background:#fff;font-size:clamp(1rem,2vw,1.2rem);box-shadow:0 6px 0 rgba(29,38,82,.18)}.selected-correct{outline:5px solid #1a7856;filter:brightness(1.05)}.selected-wrong{opacity:.45}.result{background:#f5f7ff}.trophy{font-size:58px}.result h2{margin:15px 0 5px;font-size:2rem}.score{margin:0;font-size:clamp(3.4rem,13vw,6rem);line-height:1.05;font-weight:900;letter-spacing:-4px}.score span{color:var(--muted);font-size:.46em;letter-spacing:-1px}.result-message{margin:18px 0 8px;color:var(--muted);font-size:1.08rem}.result-time{margin:0 0 28px;font-weight:900}.restart{padding:13px 27px;color:var(--ink);background:#e9edfa;border-radius:12px;font-size:.95rem}
+    /* ALTERAÇÃO: pergunta alinhada à esquerda, no topo, com as respostas ancoradas embaixo */
+    .quiz{justify-content:flex-start;gap:20px}.question-area{width:min(1120px,100%);text-align:center;padding:36px 0 0;flex:1}.answers{margin-top:auto}
+    /* ALTERAÇÃO: estilos da tela de explicação exibida após um erro */
+    .explain-card{width:min(680px,100%);padding:40px 34px;background:#fff;border-radius:28px;box-shadow:0 18px 45px rgba(53,71,131,.12)}.explain-card h2{margin:0 0 14px;color:#ce4141}.explain-card p{margin:8px 0;line-height:1.5}.explain-card .muted{color:var(--muted);font-weight:800}.explain-example{margin:14px 0 24px;padding:16px;background:#f5f7ff;border-radius:12px;overflow-x:auto;font-size:.95rem}.explain-card .restart{display:block;margin-left:auto}
+    @media(max-width:620px){.screen{padding:20px}.home-card{padding:44px 24px}.answers{grid-template-columns:1fr}.answer{min-height:72px}.topbar-info{gap:10px;font-size:.88rem}}
   </style>
 </head>
 <body><main>
@@ -14,12 +19,18 @@
   <section class="screen home" id="difficulty-screen"><div class="home-card"><div class="spark">✦</div><h1 id="difficulty-title">Quiz de PHP</h1><p>Escolha a dificuldade.</p><div class="difficulty-options"><button class="difficulty-button easy" data-difficulty="easy">Fácil</button><button class="difficulty-button medium" data-difficulty="medium">Médio</button><button class="difficulty-button hard" data-difficulty="hard">Difícil</button></div><p class="availability" id="availability-message"></p></div></section>
   <section class="screen" id="countdown-screen"><div class="countdown-card"><p class="question-label">prepare-se</p><h2>O quiz começa em</h2><p class="countdown-number" id="countdown-number">3</p></div></section>
   <section class="screen quiz" id="quiz-screen"><header class="topbar">
-    <!-- ALTERAÇÃO: antes aqui havia o texto fixo "quiz de programação".
-         Agora este espaço mostra a linguagem e a dificuldade escolhidas (ex.: "Python · Médio"),
-         sempre visíveis no topo da tela durante o quiz.
-         O texto é preenchido pelo JavaScript na função prepare(). -->
+    <!-- Mostra a linguagem e a dificuldade escolhidas (ex.: "Python · Médio"), preenchido pela função prepare(). -->
     <div class="brand" id="quiz-tags"></div>
     <div class="topbar-info"><div class="timer" id="timer">00:00</div><div id="counter">1 de 5</div></div></header><div class="progress" id="progress-bar"></div><div class="question-area"><p class="question-label">pergunta</p><h2 class="question" id="question"></h2></div><div class="answers" id="answers"></div></section>
+  <!-- ALTERAÇÃO: tela de explicação mostrada entre a questão errada e a próxima (o tempo fica pausado) -->
+  <section class="screen" id="explain-screen"><div class="explain-card">
+    <h2>Resposta incorreta</h2>
+    <p><span class="muted">Você marcou:</span> <span id="ex-chosen"></span></p>
+    <p><span class="muted">Correta:</span> <b id="ex-correct"></b></p>
+    <p id="ex-why"></p>
+    <div id="ex-example-box"><p class="muted">Exemplo</p><pre class="explain-example"><code id="ex-example"></code></pre></div>
+    <button class="restart" id="ex-next">Próxima pergunta</button>
+  </div></section>
   <section class="screen result" id="result-screen"><div class="result-card"><div class="trophy">🏆</div><h2>Seu resultado</h2><p class="score" id="score">0 <span>/ 5</span></p><p class="result-message" id="result-message"></p><p class="result-time" id="result-time"></p><button class="restart" id="restart-button">voltar ao início</button></div></section>
 </main><script>
 const q=(question,options,answer)=>({question,options,answer});
@@ -47,6 +58,193 @@ cppEasy.push(q("Qual extensão é comum para C++?",[".cpp",".java",".py",".html"
 cppMedium.push(q("Qual palavra define uma classe?",["class","object","define","struct apenas"],0),q("Qual acesso padrão de uma class é?",["public","private","protected","global"],1),q("Qual palavra libera memória de new?",["free","delete","remove","dispose"],1),q("Qual container cresce dinamicamente?",["std::vector","int","char","bool"],0),q("Qual loop percorre cada item de uma coleção?",["range-based for","goto","switch","try"],0),q("Qual palavra declara função virtual pura?",["virtual ... = 0","abstract","pure","interface"],0),q("Qual palavra evita cópia de objeto?",["move","const","static","inline"],0),q("Qual biblioteca contém std::vector?",["<vector>","<array>","<memory>","<list>"],0),q("Qual operador indica escopo de classe?",["::","->",".",":"],0));
 cppHard.push(q("Qual smart pointer tem propriedade exclusiva?",["unique_ptr","shared_ptr","weak_ptr","raw_ptr"],0),q("Qual smart pointer compartilha propriedade?",["unique_ptr","shared_ptr","weak_ptr","auto_ptr"],1),q("Qual smart pointer não possui o objeto?",["weak_ptr","unique_ptr","shared_ptr","owner_ptr"],0),q("O que uma função constexpr pode fazer?",["Ser avaliada em compilação quando possível","Somente ler arquivos","Criar thread","Usar rede"],0),q("Qual palavra impede sobrescrita de virtual?",["final","const","override","static"],0),q("Qual palavra verifica intenção de sobrescrever?",["override","virtual","final","mutable"],0),q("Qual biblioteca contém unique_ptr?",["<memory>","<vector>","<utility>","<algorithm>"],0),q("Qual container de hash não ordenado é?",["unordered_map","map","vector","set"],0),q("O que std::forward ajuda a preservar?",["Categoria de valor","Tamanho do array","Ordem do map","Escopo"],0));
 const banks={php:{easy:phpeasy,medium:phpmedium,hard:phphard},java:{easy:javaEasy,medium:javaMedium,hard:javaHard},python:{easy:pythonEasy,medium:pythonMedium,hard:pythonHard},cpp:{easy:cppEasy,medium:cppMedium,hard:cppHard}},names={php:"PHP",java:"Java",python:"Python",cpp:"C++"};let language="php",difficulty="easy",current=0,score=0,questions=[],seconds=0,timerId,countdownId;
+// ALTERAÇÃO: explicações e exemplos mostrados ao errar. Formato: info[linguagem]["texto da pergunta"] = ["explicação","exemplo"].
+// Perguntas sem entrada aqui mostram apenas a resposta correta com um texto genérico (sem exemplo).
+const info={php:{
+"Qual é a expansão atual da sigla PHP?":["PHP é um acrônimo recursivo: PHP: Hypertext Preprocessor.","<?php echo 'Olá'; ?>"],
+"Qual símbolo inicia uma variável em PHP?":["Toda variável PHP começa com $.","$idade = 20;"],
+"Qual tag é usada para começar um código PHP?":["O código PHP fica entre <?php e ?>.","<?php echo 'Oi'; ?>"],
+"Qual comando mostra um texto na tela?":["echo exibe texto na saída.","echo 'Olá';"],
+"Qual destes é o nome de uma variável válido?":["O nome precisa começar com $ e não pode começar com número.","$nome = 'Ana'; // válido\n$1nome = 'Ana'; // inválido"],
+"Qual sinal termina uma instrução em PHP?":["Cada instrução termina com ponto e vírgula.","echo 'a';"],
+"Qual tipo de informação guarda palavras?":["string é o tipo para texto.","$nome = 'Ana';"],
+"Qual palavra cria uma função em PHP?":["function declara uma função.","function soma($a,$b){ return $a+$b; }"],
+"O que o comando if faz?":["if executa um bloco só se a condição for verdadeira, ou seja, toma decisões.","if ($idade >= 18) { echo 'Adulto'; }"],
+"Qual palavra pode repetir um bloco de código?":["while repete o bloco enquanto a condição for verdadeira.","$i=0; while($i<3){ echo $i; $i++; }"],
+"Qual símbolo junta textos em PHP?":["O ponto (.) concatena textos; o + serve só para números.","echo 'Olá ' . 'mundo';"],
+"Qual destes mostra uma lista de informações?":["array guarda vários valores em uma só variável.","$frutas = ['maçã','uva'];"],
+"Qual palavra envia um valor de volta em uma função?":["return devolve um valor e encerra a função.","function dobro($n){ return $n*2; }"],
+"Para que serve o comando include?":["include insere o conteúdo de outro arquivo no ponto atual.","include 'menu.php';"],
+"Qual valor representa verdadeiro em PHP?":["true é o valor booleano verdadeiro.","$ok = true;"],
+"Qual operador compara valor e tipo?":["=== compara valor e tipo; == compara só o valor, após conversão.","0 == '0'; // true\n0 === '0'; // false"],
+"Qual superglobal recebe dados POST?":["$_POST guarda os dados enviados por formulário via POST.","$nome = $_POST['nome'];"],
+"O que array_push() faz?":["Adiciona um ou mais itens ao fim do array.","array_push($a, 5);"],
+"Como se declara uma constante?":["const (ou define()) declara uma constante, que não muda de valor.","const PI = 3.14;"],
+"Qual função conta um array?":["count() retorna o número de elementos.","count([1,2,3]); // 3"],
+"Como o operador ?? seleciona seu resultado?":["?? retorna o valor da esquerda se existir e não for null; senão, o da direita.","$nome = $_GET['n'] ?? 'Visitante';"],
+"Qual estrutura captura uma exceção?":["try/catch executa o código e trata o erro lançado.","try { risco(); } catch (Exception $e) { echo $e->getMessage(); }"],
+"Qual função converte JSON?":["json_decode() converte texto JSON em array/objeto; json_encode() faz o inverso.","$d = json_decode('{\"a\":1}', true);"],
+"Qual acesso permite método externo?":["public permite chamar o método de fora da classe.","public function falar(){ }"],
+"Para que serve foreach?":["foreach percorre cada item de uma coleção.","foreach($lista as $item){ echo $item; }"],
+"Como uma sessão começa?":["session_start() inicia (ou retoma) a sessão.","session_start();\n$_SESSION['user'] = 'Ana';"],
+"Qual função remove espaços?":["trim() remove espaços do início e do fim do texto.","trim('  oi '); // 'oi'"],
+"Qual função verifica se é array?":["is_array() retorna true se o valor for um array.","is_array([1,2]); // true"],
+"Qual operador atribui e soma?":["+= soma ao valor atual e atribui.","$x = 1; $x += 2; // 3"],
+"Qual palavra impede herança?":["final impede que a classe seja estendida.","final class A { }"],
+"Qual interface permite foreach em objeto?":["Traversable é a interface base que permite foreach (Iterator e IteratorAggregate a implementam).","class L implements IteratorAggregate {\n  function getIterator(): Iterator { return new ArrayIterator([1,2]); }\n}"],
+"O que closure com use faz?":["use importa variáveis do escopo externo para dentro da closure.","$x=2; $f=function($n) use ($x){ return $n*$x; };"],
+"Qual recurso evita colisão de classes?":["namespaces separam os nomes de classes de pacotes diferentes.","namespace App\\Models;"],
+"Qual palavra cria um gerador?":["yield entrega valores um a um sem montar a lista inteira.","function nums(){ yield 1; yield 2; }"],
+"Qual é o efeito de declare(strict_types=1) sobre tipos escalares?":["Desativa a coerção de tipos escalares nas chamadas feitas pelo arquivo.","declare(strict_types=1);\nfunction f(int $n){}\nf('5'); // TypeError"],
+"Qual operador espalha array?":["... (spread) expande os itens de um array.","$b = [...$a, 4];"],
+"Como chamar método estático?":["Métodos estáticos são chamados com :: direto na classe.","Matematica::soma(1,2);"],
+"Qual palavra reutiliza métodos entre classes?":["use dentro da classe importa uma trait.","class A { use MinhaTrait; }"],
+"PDO com parâmetros evita?":["Prepared statements separam o SQL dos dados, evitando injeção SQL.","$st=$pdo->prepare('SELECT * FROM u WHERE id=?');\n$st->execute([$id]);"],
+"Qual função registra autoload?":["spl_autoload_register() registra a função que carrega classes sob demanda.","spl_autoload_register(fn($c)=>require $c.'.php');"],
+"O que instanceof verifica?":["Verifica se um objeto é instância de determinada classe.","$o instanceof Carro; // true/false"],
+"Qual tipo indica uma função que não retorna normalmente?":["never indica que a função sempre lança exceção ou encerra o script.","function falha(): never { throw new Exception(); }"]
+},
+java:{
+"Qual método inicia um programa Java?":["A JVM começa a execução pelo método main.","public static void main(String[] args) { }"],
+"Qual palavra cria um objeto?":["new instancia (cria) um objeto a partir de uma classe.","Carro c = new Carro();"],
+"Java é uma linguagem:":["Java é orientada a objetos: o código se organiza em classes e objetos. Não é de marcação (HTML) nem de consulta (SQL).","class Pessoa { String nome; }"],
+"Qual tipo guarda verdadeiro ou falso?":["boolean guarda true ou false.","boolean ativo = true;"],
+"Como se escreve um comentário de uma linha?":["Em Java o comentário de linha começa com //. O # é de Python.","// isto é um comentário\nint x = 1;"],
+"Qual comando mostra texto no console?":["System.out.println imprime texto e pula a linha; echo e console.log são de outras linguagens.","System.out.println(\"Olá\");"],
+"Qual extensão identifica arquivo-fonte Java?":[".java é o código-fonte que você escreve; .class é o bytecode gerado pelo compilador.","Main.java → javac → Main.class"],
+"Qual tipo guarda números inteiros?":["int guarda inteiros; float guarda decimais.","int idade = 20;"],
+"Qual símbolo finaliza uma instrução Java?":["Toda instrução termina com ponto e vírgula.","int x = 5;"],
+"Como se declara uma classe?":["A classe é declarada com a palavra class seguida do nome.","class MinhaClasse { }"],
+"Qual tipo guarda texto em Java?":["String (com S maiúsculo) é a classe para texto.","String nome = \"Ana\";"],
+"O que é um arquivo .class?":["É o bytecode compilado, executado pela JVM.","javac Main.java  // gera Main.class\njava Main"],
+"Qual palavra retorna valor de método?":["return devolve o valor e encerra o método.","int dobro(int n){ return n*2; }"],
+"Qual operador compara valores numéricos?":["== compara igualdade; = apenas atribui; === não existe em Java.","if (x == 5) { }"],
+"Qual estrutura repete enquanto a condição é verdadeira?":["while repete o bloco enquanto a condição for true.","while (i < 3) { i++; }"],
+"Qual palavra indica herança em Java?":["extends faz uma classe herdar de outra; implements é para interfaces.","class Cachorro extends Animal { }"],
+"Qual coleção não aceita elementos duplicados?":["Set não permite repetidos; List permite.","Set<Integer> s = new HashSet<>();\ns.add(1); s.add(1); // size() = 1"],
+"Qual bloco trata exceções?":["try/catch: o código arriscado vai no try e o tratamento no catch.","try { int x = 1/0; } catch (ArithmeticException e) { }"],
+"Qual modificador impede alteração de variável?":["final impede nova atribuição. const existe como palavra reservada, mas não é usada.","final int MAX = 10;"],
+"O que uma interface define?":["Define um contrato: os métodos que as classes que a implementam devem ter.","interface Voador { void voar(); }"],
+"Qual operador compara objetos por referência?":["== compara se duas variáveis apontam para o mesmo objeto; equals() compara o conteúdo.","new String(\"a\") == new String(\"a\"); // false"],
+"Qual bloco sempre é executado após try/catch?":["finally roda ocorrendo exceção ou não.","try { } catch (Exception e) { } finally { System.out.println(\"fim\"); }"],
+"Qual palavra lança uma exceção?":["throw lança uma exceção (throws só declara que o método pode lançar).","throw new IllegalArgumentException(\"inválido\");"],
+"Qual palavra declara possíveis exceções de um método?":["throws, na assinatura do método, avisa quais exceções ele pode lançar.","void ler() throws IOException { }"],
+"Qual classe representa texto imutável?":["String é imutável: modificá-la cria um novo objeto. StringBuilder é a versão mutável.","String s = \"a\"; s.concat(\"b\"); // s continua \"a\""],
+"Qual coleção mantém ordem e permite repetidos?":["List mantém a ordem de inserção e aceita repetidos.","List<String> l = new ArrayList<>();\nl.add(\"a\"); l.add(\"a\");"],
+"Qual método compara conteúdo de Strings?":["equals() compara o texto; == compara referências.","\"oi\".equals(s)"],
+"Qual modificador restringe acesso à própria classe?":["private só permite acesso dentro da própria classe.","private int saldo;"],
+"Qual palavra impede sobrescrita de método?":["final em um método impede que subclasses o sobrescrevam.","public final void salvar() { }"],
+"Qual instrução fecha recursos automaticamente?":["try-with-resources fecha o recurso ao sair do bloco.","try (Scanner sc = new Scanner(System.in)) { }"],
+"Qual recurso permite classes com tipos parametrizados?":["Generics parametrizam o tipo (List<String>) com segurança em tempo de compilação.","class Caixa<T> { T item; }"],
+"O que JVM significa?":["JVM = Java Virtual Machine, a máquina virtual que executa o bytecode.","java Main // a JVM roda Main.class"],
+"Qual estrutura processa dados de forma funcional?":["A Stream API processa coleções com operações encadeadas (map, filter...).","lista.stream().filter(n -> n > 1).toList();"],
+"O que synchronized ajuda a controlar?":["Controla o acesso concorrente: só uma thread por vez executa o bloco.","synchronized void incrementar() { cont++; }"],
+"Qual classe é a raiz da hierarquia Java?":["Object é a superclasse de todas as classes.","Object o = \"texto\";"],
+"O que Optional ajuda a evitar?":["Optional representa um valor possivelmente ausente, ajudando a evitar NullPointerException.","Optional<String> o = Optional.empty();\no.orElse(\"padrão\");"],
+"Qual interface é usada por lambdas?":["Lambdas implementam interfaces funcionais (um único método abstrato), marcadas com @FunctionalInterface.","@FunctionalInterface interface Soma { int f(int a,int b); }"],
+"Qual palavra cria uma expressão lambda?":["Java não tem palavra reservada para lambda: usa a seta ->.","(a, b) -> a + b"],
+"Qual API oferece operações como map e filter?":["A Stream API (java.util.stream) oferece map, filter e outras.","lista.stream().map(String::length)"],
+"Qual classe agrupa tarefas assíncronas?":["CompletableFuture executa e encadeia tarefas assíncronas.","CompletableFuture.supplyAsync(() -> 1).thenApply(x -> x + 1);"],
+"O que record cria principalmente?":["record cria classes concisas para dados imutáveis.","record Ponto(int x, int y) { }"],
+"Qual declaração limita o tipo aceito por genérico?":["Um bound com extends limita o tipo aceito.","<T extends Number> T primeiro(List<T> l)"],
+"Qual método de Stream transforma cada elemento?":["map transforma cada elemento; filter seleciona; reduce combina.","Stream.of(1,2).map(n -> n * 2); // 2, 4"],
+"Qual padrão permite fechar recurso ao sair do escopo?":["try-with-resources fecha recursos AutoCloseable ao sair do bloco.","try (var r = new FileReader(\"a.txt\")) { }"],
+"Qual classe representa ausência/presença de valor?":["Optional encapsula um valor que pode estar presente ou ausente.","Optional.ofNullable(x).isPresent()"]
+},
+python:{
+"Qual extensão é comum para arquivos Python?":["Arquivos Python usam .py.","app.py"],
+"Como se mostra texto na tela?":["print() exibe texto; echo é de PHP e console.log, de JavaScript.","print('Olá')"],
+"Qual símbolo começa um comentário?":["Em Python o comentário começa com #.","# comentário\nx = 1"],
+"Qual tipo representa uma lista?":["list é a lista nativa (entre colchetes). Python não tem um tipo chamado array por padrão.","frutas = ['maçã','uva']"],
+"Como se define uma função?":["def define uma função.","def soma(a, b):\n    return a + b"],
+"Qual valor representa verdadeiro?":["Em Python o booleano é True, com T maiúsculo. true minúsculo não existe.","ativo = True"],
+"Qual função lê entrada do usuário?":["input() lê o que o usuário digita, como texto.","nome = input('Nome: ')"],
+"Qual símbolo inicia um bloco após if?":["Dois-pontos (:) abrem o bloco, que é indentado. Python não usa chaves.","if x > 0:\n    print('positivo')"],
+"Qual operador faz potência?":["** eleva à potência; ^ é XOR bit a bit.","2 ** 3  # 8"],
+"Qual valor representa ausência de valor?":["None representa ausência de valor.","resultado = None"],
+"Como se cria uma tupla?":["Tuplas usam parênteses.","t = (1, 2)"],
+"Qual função converte texto em inteiro?":["int() converte texto em inteiro.","int('42')  # 42"],
+"Qual palavra repete sobre elementos?":["for percorre os elementos; foreach não existe em Python.","for f in frutas:\n    print(f)"],
+"Qual método adiciona item a uma lista?":["append() adiciona ao final da lista.","l = [1]\nl.append(2)  # [1, 2]"],
+"Qual operador testa igualdade?":["== testa igualdade; = atribui; === não existe em Python.","if x == 5:"],
+"Qual palavra cria uma classe?":["class declara uma classe.","class Pessoa:\n    pass"],
+"O que len() retorna?":["len() retorna o tamanho (quantidade de itens ou caracteres).","len([1,2,3])  # 3"],
+"Qual estrutura armazena pares chave-valor?":["dict guarda pares chave-valor.","d = {'nome': 'Ana'}"],
+"Como se importa um módulo?":["import carrega um módulo.","import math"],
+"Qual palavra trata exceções?":["except captura a exceção (catch é de outras linguagens).","try:\n    1/0\nexcept ZeroDivisionError:\n    print('erro')"],
+"O que uma list comprehension cria?":["Cria uma lista de forma concisa, em uma linha.","[n*2 for n in range(3)]  # [0, 2, 4]"],
+"Qual função abre um arquivo?":["open() abre um arquivo.","f = open('a.txt')"],
+"Qual modo abre arquivo para escrita?":["'w' abre para escrita (e apaga o conteúdo anterior); 'r' é leitura.","open('a.txt', 'w')"],
+"Qual palavra cria uma função anônima?":["lambda cria funções anônimas de uma só expressão.","dobro = lambda n: n*2"],
+"Qual módulo fornece raiz quadrada?":["O módulo math tem sqrt().","import math\nmath.sqrt(9)  # 3.0"],
+"Qual método ordena lista no próprio objeto?":["sort() ordena a própria lista (in place) e retorna None.","l = [3,1,2]\nl.sort()  # [1,2,3]"],
+"Qual função retorna lista ordenada nova?":["sorted() devolve uma nova lista e não altera a original.","sorted([3,1,2])  # [1,2,3]"],
+"Qual bloco é executado sempre ao final de try?":["finally roda ocorrendo erro ou não.","try:\n    ...\nfinally:\n    print('fim')"],
+"Qual operador verifica pertencimento?":["in verifica se um item está em uma coleção.","'a' in 'banana'  # True"],
+"Qual tipo é imutável?":["tuple é imutável: não dá para alterar itens depois de criada.","t = (1,2)\nt[0] = 5  # TypeError"],
+"Qual palavra cria um gerador?":["yield transforma a função em gerador, entregando um valor por vez.","def contar():\n    yield 1\n    yield 2"],
+"O que decoradores fazem?":["Decoradores estendem o comportamento de uma função sem alterá-la.","@meu_decorador\ndef f(): ..."],
+"Qual protocolo permite usar for em objeto?":["Um objeto é iterável se implementa __iter__.","class C:\n    def __iter__(self): return iter([1,2])"],
+"O que async def define?":["Define uma função assíncrona (corrotina).","async def buscar():\n    ..."],
+"Qual coleção não permite itens repetidos?":["set não guarda itens repetidos.","set([1,1,2])  # {1, 2}"],
+"O que @property permite?":["Permite acessar um método como se fosse atributo, sem parênteses.","class P:\n    @property\n    def nome(self): return 'Ana'\nP().nome"],
+"Qual protocolo permite gerenciador de contexto?":["__enter__ e __exit__ definem o que acontece ao entrar e sair do with.","class G:\n    def __enter__(self): ...\n    def __exit__(self, *a): ..."],
+"O que with geralmente faz?":["with gerencia um contexto, liberando recursos ao sair (como fechar um arquivo).","with open('a.txt') as f:\n    f.read()"],
+"Qual palavra espera uma operação assíncrona?":["await aguarda o resultado de uma corrotina.","resultado = await buscar()"],
+"Qual módulo oferece event loop?":["asyncio fornece o event loop.","import asyncio\nasyncio.run(main())"],
+"Qual função retorna iterador de um objeto?":["iter() retorna um iterador do objeto.","it = iter([1,2])"],
+"Qual função obtém próximo item de iterador?":["next() devolve o próximo item do iterador.","it = iter([1,2])\nnext(it)  # 1"],
+"Qual coleção mantém pares chave-valor?":["dict mantém pares chave-valor; set guarda itens únicos.","{'a': 1}"],
+"Qual método define representação legível do objeto?":["__str__ define o texto amigável usado por print() e str().","def __str__(self): return 'Pessoa Ana'"],
+"Qual exceção indica divisão por zero?":["ZeroDivisionError é lançada ao dividir por zero.","1/0  # ZeroDivisionError"]
+},
+cpp:{
+"Qual função inicia um programa C++?":["A execução começa em main().","int main() { return 0; }"],
+"Qual símbolo termina uma instrução?":["Ponto e vírgula encerra cada instrução.","int x = 5;"],
+"Qual biblioteca é usada para cout?":["<iostream> fornece cout e cin; <stdio.h> é do C.","#include <iostream>"],
+"Como se cria uma variável inteira?":["Declara-se com o tipo int.","int x = 10;"],
+"Qual comando escreve no console?":["cout envia dados à saída padrão com <<.","std::cout << \"Olá\";"],
+"Qual símbolo inicia comentário de linha?":["// inicia comentário de linha em C++.","// comentário\nint x;"],
+"Qual extensão é comum para C++?":[".cpp é a extensão usual de código-fonte C++.","main.cpp"],
+"Qual palavra cria uma função?":["Não há palavra function: declara-se o tipo de retorno (void quando não retorna nada).","void ola() { }\nint soma(int a,int b){ return a+b; }"],
+"Qual tipo guarda verdadeiro ou falso?":["bool guarda true/false (boolean não existe em C++).","bool ok = true;"],
+"Qual diretiva inclui biblioteca?":["#include inclui cabeçalhos.","#include <vector>"],
+"Qual operador atribui valor?":["= atribui; == compara.","x = 5;"],
+"Qual estrutura toma decisão?":["if executa um bloco conforme a condição.","if (x > 0) { }"],
+"Qual palavra retorna um valor?":["return devolve o valor da função.","int dobro(int n){ return n*2; }"],
+"Qual tipo guarda um caractere?":["char guarda um caractere.","char letra = 'A';"],
+"Como se escreve uma string em C++?":["string (de <string>) guarda texto, no namespace std.","std::string nome = \"Ana\";"],
+"Qual palavra cria um objeto dinamicamente?":["new aloca na memória dinâmica (heap); malloc é do C.","int* p = new int(5);"],
+"Qual estrutura pode armazenar vários valores?":["vector guarda vários valores, com tamanho dinâmico.","std::vector<int> v = {1,2,3};"],
+"Qual palavra indica herança pública?":[": public Base indica herança pública.","class Cachorro : public Animal { };"],
+"Para que serve const?":["const impede modificar o valor depois de definido.","const int MAX = 10;"],
+"Qual operador acessa membro por ponteiro?":["-> acessa membros através de ponteiro; . é para objetos diretos.","Carro* c = new Carro();\nc->ligar();"],
+"Qual bloco trata exceções?":["try/catch trata exceções lançadas com throw.","try { throw 1; } catch (int e) { }"],
+"Qual palavra define uma classe?":["class define uma classe.","class Pessoa { };"],
+"Qual acesso padrão de uma class é?":["Em class, o acesso padrão é private (em struct é public).","class A { int x; };  // x é private"],
+"Qual palavra libera memória de new?":["delete libera memória alocada com new; free é para malloc.","int* p = new int(1);\ndelete p;"],
+"Qual container cresce dinamicamente?":["std::vector aumenta de tamanho conforme necessário.","v.push_back(4);"],
+"Qual loop percorre cada item de uma coleção?":["O range-based for percorre cada item da coleção.","for (int n : v) { }"],
+"Qual palavra declara função virtual pura?":["virtual ... = 0 torna a função virtual pura (classe abstrata).","virtual void falar() = 0;"],
+"Qual palavra evita cópia de objeto?":["std::move transfere os recursos em vez de copiar.","auto b = std::move(a);"],
+"Qual biblioteca contém std::vector?":["<vector> define std::vector.","#include <vector>"],
+"Qual operador indica escopo de classe?":[":: indica escopo (classe ou namespace).","std::cout\nPessoa::falar"],
+"Qual recurso gerencia memória automaticamente?":["Smart pointers liberam a memória sozinhos ao sair de escopo.","auto p = std::make_unique<int>(5);"],
+"O que template permite?":["Templates permitem escrever código genérico, independente do tipo.","template<typename T> T maior(T a, T b){ return a>b?a:b; }"],
+"Qual conceito evita cópias desnecessárias?":["Move semantics move recursos em vez de copiá-los.","std::vector<int> b = std::move(a);"],
+"O que RAII associa a recursos?":["RAII associa o recurso ao tempo de vida de um objeto: adquire no construtor e libera no destrutor.","{ std::lock_guard<std::mutex> l(m); } // libera ao sair"],
+"Qual container mantém chaves ordenadas?":["std::map mantém as chaves ordenadas; unordered_map não.","std::map<int,std::string> m;"],
+"O que std::move faz?":["Converte para referência rvalue, permitindo mover; não move nada sozinho.","auto b = std::move(a);"],
+"Qual smart pointer tem propriedade exclusiva?":["unique_ptr tem um único dono e não pode ser copiado.","std::unique_ptr<int> p = std::make_unique<int>(1);"],
+"Qual smart pointer compartilha propriedade?":["shared_ptr permite vários donos, com contagem de referências.","auto a = std::make_shared<int>(1);\nauto b = a;"],
+"Qual smart pointer não possui o objeto?":["weak_ptr observa um objeto de shared_ptr sem ser dono dele.","std::weak_ptr<int> w = a;"],
+"O que uma função constexpr pode fazer?":["Pode ser avaliada em tempo de compilação quando os argumentos permitem.","constexpr int quad(int n){ return n*n; }\nconstexpr int x = quad(4);"],
+"Qual palavra impede sobrescrita de virtual?":["final impede que o método virtual seja sobrescrito.","void f() final;"],
+"Qual palavra verifica intenção de sobrescrever?":["override faz o compilador checar que o método sobrescreve um virtual da base.","void falar() override;"],
+"Qual biblioteca contém unique_ptr?":["<memory> contém os smart pointers.","#include <memory>"],
+"Qual container de hash não ordenado é?":["unordered_map usa tabela hash e não mantém ordem.","std::unordered_map<std::string,int> m;"],
+"O que std::forward ajuda a preservar?":["Preserva a categoria de valor (lvalue/rvalue) ao repassar argumentos em templates (perfect forwarding).","template<class T> void f(T&& a){ g(std::forward<T>(a)); }"]
+}};
 const $=s=>document.querySelector(s),screens=document.querySelectorAll(".screen");
 function technicalQuestion(question){
   const specific={
@@ -112,14 +310,37 @@ function technicalQuestion(question){
 }
 function show(screen){screens.forEach(x=>x.classList.remove("active"));screen.classList.add("active")}function shuffle(a){let b=[...a];for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}function format(n){return String(Math.floor(n/60)).padStart(2,"0")+":"+String(n%60).padStart(2,"0")}
 function prepare(){
-  // ALTERAÇÃO: preenche o topo da tela com "Linguagem · Dificuldade" (ex.: "Python · Médio").
-  // names[language] já existia no código e converte a chave em nome (php -> PHP, cpp -> C++).
-  // O objeto {easy, medium, hard} converte a dificuldade escolhida para português.
-  // prepare() roda sempre que um quiz começa (depois da contagem regressiva),
-  // então o topo mostra a escolha correta a cada partida.
+  // Preenche o topo da tela com "Linguagem · Dificuldade" (ex.: "Python · Médio").
   $("#quiz-tags").textContent=names[language]+" · "+{easy:"Fácil",medium:"Médio",hard:"Difícil"}[difficulty];
-  questions=shuffle(banks[language][difficulty].map(x=>({...x,options:shuffle(x.options.map((text,i)=>({text,correct:i===x.answer})))})));$("#progress-bar").innerHTML=questions.map((_,i)=>'<span class="progress-dot" data-i="'+i+'"></span>').join("")}function render(){let x=questions[current];$("#question").textContent=technicalQuestion(x.question);$("#counter").textContent=(current+1)+" de "+questions.length;$("#answers").innerHTML="";x.options.forEach(o=>{let b=document.createElement("button");b.className="answer";b.textContent=o.text;b.dataset.correct=o.correct;b.onclick=()=>answer(o.correct,b);$("#answers").appendChild(b)})}
-function answer(correct,button){$("#answers").querySelectorAll("button").forEach(b=>b.disabled=true);let dot=$('[data-i="'+current+'"]');if(correct){score++;button.classList.add("selected-correct");dot.classList.add("correct");dot.textContent="✓"}else{button.classList.add("selected-wrong");$('#answers [data-correct="true"]').classList.add("selected-correct");dot.classList.add("wrong");dot.textContent="✗"}setTimeout(()=>{current++;current<questions.length?render():result()},850)}
+  questions=shuffle(banks[language][difficulty].map(x=>({...x,options:shuffle(x.options.map((text,i)=>({text,correct:i===x.answer})))})));$("#progress-bar").innerHTML=questions.map((_,i)=>'<span class="progress-dot" data-i="'+i+'"></span>').join("")}function render(){let x=questions[current];$("#question").textContent=technicalQuestion(x.question);$("#counter").textContent=(current+1)+" de "+questions.length;$("#answers").innerHTML="";x.options.forEach(o=>{let b=document.createElement("button");b.className="answer";b.textContent=o.text;b.dataset.correct=o.correct;
+  // ALTERAÇÃO: agora envia a opção inteira (texto + se está correta), para mostrar o que o usuário marcou
+  b.onclick=()=>answer(o,b);$("#answers").appendChild(b)})}
+// ALTERAÇÃO: acerto avança direto; erro abre a tela de explicação (e pausa o tempo)
+function answer(opt,button){
+  const correct=opt.correct;
+  $("#answers").querySelectorAll("button").forEach(b=>b.disabled=true);
+  let dot=$('[data-i="'+current+'"]');
+  if(correct){score++;button.classList.add("selected-correct");dot.classList.add("correct");dot.textContent="✓"}
+  else{button.classList.add("selected-wrong");$('#answers [data-correct="true"]').classList.add("selected-correct");dot.classList.add("wrong");dot.textContent="✗"}
+  setTimeout(()=>correct?next():showExplanation(opt),850);
+}
+function next(){current++;current<questions.length?render():result()}
+function resumeTimer(){clearInterval(timerId);timerId=setInterval(()=>$("#timer").textContent=format(++seconds),1000)}
+function showExplanation(opt){
+  clearInterval(timerId); // pausa o tempo
+  const x=questions[current],right=x.options.find(o=>o.correct).text,d=(info[language]||{})[x.question];
+  $("#ex-chosen").textContent=opt.text;
+  $("#ex-correct").textContent=right;
+  $("#ex-why").textContent=d?d[0]:'A resposta certa é "'+right+'". Revise esse conceito de '+names[language]+'.';
+  $("#ex-example").textContent=d?d[1]:"";
+  $("#ex-example-box").style.display=d?"block":"none";
+  $("#ex-next").textContent=current+1<questions.length?"Próxima pergunta":"Ver resultado";
+  show($("#explain-screen"));
+}
+$("#ex-next").onclick=()=>{
+  if(current+1<questions.length){show($("#quiz-screen"));resumeTimer()}
+  next();
+};
 function startTimer(){seconds=0;$("#timer").textContent=format(0);clearInterval(timerId);timerId=setInterval(()=>$("#timer").textContent=format(++seconds),1000)}function result(){clearInterval(timerId);$("#score").innerHTML=score+' <span>/ '+questions.length+"</span>";const equivalentScore=(score/questions.length)*15;$("#result-message").textContent=equivalentScore<=3?"Estude mais lil bro.":equivalentScore<=6?"Você estudou, mas não sabe a matéria.":equivalentScore<=9?"Média.":equivalentScore<=12?"Até que bom.":equivalentScore<15?"Quase lá, mas muito bom.":"Total, parabéns!";$(" #result-time".trim()).textContent="Tempo total: "+format(seconds);show($("#result-screen"))}
 function countdown(){let n=3;$("#countdown-number").textContent=n;show($("#countdown-screen"));clearInterval(countdownId);countdownId=setInterval(()=>{n--;$("#countdown-number").textContent=n||"Vamos!";if(!n){clearInterval(countdownId);prepare();show($("#quiz-screen"));startTimer();render()}},1000)}
 document.querySelectorAll(".language-button").forEach(b=>b.onclick=()=>{language=b.dataset.language;$("#difficulty-title").textContent="Quiz de "+names[language];document.querySelectorAll(".difficulty-button").forEach(x=>x.disabled=false);$("#availability-message").textContent="";show($("#difficulty-screen"))});document.querySelectorAll(".difficulty-button").forEach(b=>b.onclick=()=>{difficulty=b.dataset.difficulty;current=score=0;countdown()});$("#restart-button").onclick=()=>{clearInterval(timerId);clearInterval(countdownId);show($("#home-screen"))};
